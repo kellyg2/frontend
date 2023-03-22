@@ -3,8 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const openMenu =() => {
+    document.querySelector("sidebar")?.classList.add("open");
+  }
+  const closeMenu =() => {
+    document.querySelector("sidebar")?.classList.remove("close");
+  }
   return (
-    <div className="App">
+    <div className= ".grid-container">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
